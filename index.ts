@@ -4,7 +4,7 @@ import { router } from './routes/router'
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;
 
 //BodyParser. Lo que me posteen lo tomo y genero un objeto JS
 server.app.use( bodyParser.urlencoded({ extended: true }) );
